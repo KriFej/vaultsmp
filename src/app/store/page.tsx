@@ -4,7 +4,7 @@ import { useState, type JSX } from "react";
 
 // ==================== DATA ====================
 
-const SERVER_IP = "play.vaultsmp.net";
+const SERVER_IP = "vaultsmp.com";
 
 const STATS = [
   { value: "1,247", label: "Online", icon: "⚡" },
@@ -1126,27 +1126,7 @@ export default function StorePage() {
         </nav>
 
         {/* Hero content */}
-        <div className="relative z-10 flex flex-col items-center text-center px-4">
-          {/* Live badge */}
-          <div
-            className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-bold mb-8 tracking-wide"
-            style={{
-              background: "rgba(249,115,22,0.08)",
-              border: "1px solid rgba(249,115,22,0.28)",
-              color: "#f97316",
-            }}
-          >
-            <span
-              className="w-2 h-2 rounded-full"
-              style={{
-                background: "#4ade80",
-                boxShadow: "0 0 8px #4ade80",
-                animation: "pulse 2.4s ease-in-out infinite",
-              }}
-            />
-            1,247 players online right now
-          </div>
-
+        <div className="relative z-10 flex flex-col items-center text-center px-4 pt-20">
           {/* Giant title */}
           <h1
             className="text-[72px] sm:text-[100px] md:text-[140px] font-black leading-none tracking-tighter mb-1 select-none"
